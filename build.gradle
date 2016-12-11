@@ -1,0 +1,35 @@
+buildscript {
+    ext.spring_boot_version = '1.4.2.RELEASE'
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:$spring_boot_version")
+    }
+}
+
+group 'idgst.info'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    jcenter()
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+
+    // Webjars dependencies:
+    compile 'org.webjars:jquery:3.1.1-1'
+    compile 'org.webjars:bootstrap:3.3.5'
+
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}

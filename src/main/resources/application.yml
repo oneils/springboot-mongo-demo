@@ -1,0 +1,11 @@
+app:
+  name: springbott-mongo-demo
+  description: This projects demonstrats how how run Spring Boot, Mongo DB
+
+logging:
+  file: app.log
+
+server:
+  port: 8080
+
+#spring.data.mongodb.uri: mongodb://idgst-mongo:27017/digest
