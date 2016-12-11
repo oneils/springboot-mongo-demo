@@ -10,7 +10,6 @@ buildscript {
 }
 
 group 'idgst.info'
-version '1.0-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: 'spring-boot'
