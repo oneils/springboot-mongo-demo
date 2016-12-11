@@ -31,6 +31,14 @@ Running the project locally assumes that `java` and `MongoDB` are installed loca
 ## How to work the application
 After application is started open the following into any browser [http://localhost:8080](http://localhost:8080)
 
+Application also provides `REST` API for retrieving all users or user by `userID`.  
+To retrieve all users:
+[http://localhost:8080/api/users](http://localhost:8080/api/users)   
+To retrieve user by ID:   
+[http://localhost:8080/api/users/user_id](http://localhost:8080/api/users/user_id)   
+`user_id` should be replaced by real `ID` from the main page.
+
+
 ## Project architecture
 Application consists of:
 * `UserController ` which handles request from `index.html` page
