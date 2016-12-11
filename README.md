@@ -28,6 +28,9 @@ Open `DemoApp.java` file. Right click on the `main` method and select `Run 'Demo
 
 Running the project locally assumes that `java` and `MongoDB` are installed locally.
 
+## How to work the application
+After application is started open the following into any browser [http://localhost:8080](http://localhost:8080)
+
 ## Project architecture
 Application consists of:
 * `UserController ` which handles request from `index.html` page
