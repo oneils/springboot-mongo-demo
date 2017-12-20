@@ -4,6 +4,9 @@ build/
 
 ### Java template
 *.class
+.settings
+.classpath
+.project
 
 # Package Files #
 *.war
