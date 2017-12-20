@@ -7,7 +7,7 @@ Entered data on the form will be saved `users` collection in `MongoDB`.
 
 Application consists of:
 
-* `UserController ` which handles request from `index.html` page
+* `UserController` which handles request from `index.html` page
 * `UserResource` - is `REST` endpoint for retrieving `Users`
 * `UserRepository` - repository interface for persistence and retrieving `Users` from `MongoDB`
 
@@ -71,6 +71,7 @@ docker network create spring_demo_net
 ### Run MongoDB in Docker
 
 Create folder for storing Mongo DB data:
+
 ```bash
 mkdir -p ~/mongo-data
 ```
@@ -103,8 +104,9 @@ cd docker && docker build --tag=spring-demo-1.0 .
 ### Run Spring Boot in Docker
 
 To run build application `jar` file in Docker:
+
 ```bash
-docker run -d --name spring-demo --network=spring_demo_net -p 8080:8080  spring-demo-1.0  
+docker run -d --name spring-demo --network=spring_demo_net -p 8080:8080  spring-demo-1.0 
 ```
 
 ### Verify application and Mongo started correctly
